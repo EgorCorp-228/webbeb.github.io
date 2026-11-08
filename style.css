@@ -1,0 +1,259 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 20px;
+    color: #333;
+}
+
+.section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.narrow-section {
+    width: 55%;
+    margin-left: 0;
+}
+
+.task3-title {
+    color: blue;
+    font-family: 'Times New Roman', serif;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 6px;
+}
+
+.big-nonbold {
+    font-size: 1.4em;
+    font-weight: normal;
+}
+
+.highlight-cyan {
+    background-color: #00FFFF;
+    padding: 8px;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 1.15em;
+}
+
+.right-align {
+    text-align: right;
+    margin-bottom: 15px;
+    font-size: 1.05em;
+}
+
+.yellow-bg {
+    background-color: #FFFF00;
+    padding: 2px 4px;
+}
+
+.gray-bg-inline {
+    background-color: #e0e0e0;
+    padding: 2px 4px;
+}
+
+.pink-bg {
+    background-color: #ff1493;
+    color: black;
+    padding: 2px 6px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.italic-underline {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.underline-text {
+    text-decoration: underline;
+}
+
+.big-font {
+    font-size: 1.5em;
+}
+
+.blue-italic {
+    color: blue;
+    font-style: italic;
+}
+
+.red-italic {
+    color: red;
+    font-style: italic;
+}
+
+.normal-text {
+    color: #333;
+    text-decoration: none;
+}
+
+.gray-center-bg {
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    display: table;
+    width: auto;
+}
+
+.right-align-table {
+    text-align: right;
+    margin-right: 5%;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.math-title {
+    text-align: center;
+    color: blue;
+    font-style: italic;
+    text-decoration: line-through;
+    margin-top: 10px;
+}
+
+.highlight-yellow {
+    background-color: #FFFF00;
+    padding: 5px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.purple-title {
+    color: purple;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.magenta-text {
+    color: magenta;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.blue-underline {
+    color: blue;
+    text-decoration: underline;
+}
+
+.math-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+.math-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 16px;
+}
+
+.math-table .header-row td {
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.math-table .empty-cell {
+    background-color: #ffffff;
+}
+
+.header-left {
+    text-align: right;
+    font-style: italic;
+}
+
+.header-center {
+    text-align: center;
+}
+
+.header-right-blue {
+    text-align: right;
+    color: blue;
+}
+
+.header-left-underline {
+    text-align: left;
+    text-decoration: underline;
+}
+
+.formula-blue {
+    color: blue;
+}
+
+.formula-bold {
+    font-weight: bold;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.reg-form {
+    border: 2px solid #0056b3;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #eef5ff;
+    width: 500px;
+}
+
+.reg-form h2 {
+    color: #0056b3;
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.reg-form label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.reg-form input[type="text"],
+.reg-form input[type="password"],
+.reg-form textarea,
+.reg-form select {
+    width: 95%;
+    padding: 4px;
+    margin-top: 3px;
+}
+
+.reg-form .btn-reset {
+    background-color: #fff;
+    border: 1px solid #0056b3;
+    padding: 5px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.reg-form .btn-submit {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.pyramid-table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.pyramid-table td {
+    border: 1px solid black;
+}
+
+.pyramid-table td#t1 { background-color: #00fecc; }
+.pyramid-table td#t2 { background-color: #fffeca; }

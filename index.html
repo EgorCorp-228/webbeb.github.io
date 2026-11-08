@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная работа: HTML и CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .complex-table td {
+            height: 30px;
+            color: black;
+        }
+        .complex-table {
+            width: 50%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="section">
+        <h1 style="text-align: center; color: #2c3e50;">Персональная страница студента</h1>
+        
+        <p style="text-align: center; font-style: italic; color: #555;">
+            Добро пожаловать на мой учебный сайт!
+        </p>
+
+        <h3>Информация обо мне:</h3>
+        <img src="s.jpg" alt="Фото студента" class="student-photo">
+        
+        <ul>
+            <li><strong>ФИО:</strong>Патрик Стар</li>
+            <li><strong>Электронный почтовый адрес:</strong> <a href="PatrikST@gogle.com">PatrikST@gogle.com</a></li>
+            <li><strong>Ссылка на сайт вуза:</strong> <a href="https://nvsu.ru/" target="_blank" style="color: #e74c3c; font-weight: bold; text-decoration: none;">Официальный сайт НВГУ</a></li>
+            <li><strong>Мой ВУЗ:</strong> Нижневартовский государственный университет (НВГУ)</li>
+            <li><strong>Моя группа:</strong> 3412</li>
+            <li><strong>Моя будущая профессия:</strong> Программист-разработчик</li>
+            <li><strong>Мои увлечения:</strong> Спорт, программирование</li>
+            <li><strong>Другая информация:</strong> Продам гараж.</li>
+        </ul>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="section">
+        <h2 style="text-align: center;">Задание 2.2</h2>
+        
+        <h3>А</h3>
+        <table border="1" cellpadding="5" cellspacing="0" class="complex-table" style="border-collapse: collapse; border-color: black;">
+            <tr>
+                <td colspan="5"></td>
+            </tr>
+            <tr>
+                <td rowspan="3"></td>
+                <td></td>
+                <td rowspan="3"></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="3"></td>
+                <td rowspan="3"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <h3 style="text-align: center; margin-top: 30px;">Б</h3>
+        
+        <table class="pyramid-table" style="width:500px; height:500px">
+            <tr>
+                <td id="t1" colspan="8"></td>
+            </tr>
+            <tr>
+                <td id="t2" rowspan="6"></td>
+                <td id="t1" colspan="6"></td>
+                <td id="t2" rowspan="6"></td>
+            </tr>
+            <tr>
+                <td id="t2" rowspan="4"></td>
+                <td id="t1" colspan="4"></td>
+                <td id="t2" rowspan="4"></td>
+            </tr>
+            <tr>
+                <td id="t2" rowspan="2"></td>
+                <td style="background-color: red"></td>
+                <td style="background-color: blue"></td>
+                <td id="t2" rowspan="2"></td>
+            </tr>
+            <tr>
+                <td style="background-color: lime"></td>
+                <td style="background-color: yellow"></td>
+            </tr>
+            <tr>
+                <td id="t1" colspan="4"></td>
+            </tr>
+            <tr>
+                <td id="t1" colspan="6"></td>
+            </tr>
+            <tr>
+                <td id="t1" colspan="8"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2 style="text-align: center;">Задание 2.3</h2>
+
+        <h3> "ЗАО Птицефабрика №1"</h3>
+        <form action="#" method="post">
+            <table border="0" cellpadding="5" cellspacing="0" align="center">
+                <tr>
+                    <td align="right">Фамилия</td>
+                    <td><input type="text" name="lastname" size="30"></td>
+                </tr>
+                <tr>
+                    <td align="right">Инициалы</td>
+                    <td><input type="text" name="initials" size="30"></td>
+                </tr>
+                <tr>
+                    <td align="right">Пароль</td>
+                    <td><input type="password" name="password" size="30"></td>
+                </tr>
+                <tr>
+                    <td align="right">Адрес получателя</td>
+                    <td><input type="text" name="address" size="50"></td>
+                </tr>
+                <tr>
+                    <td align="right">Количество</td>
+                    <td><input type="text" name="quantity" size="10"></td>
+                </tr>
+                <tr>
+                    <td align="right">Тип</td>
+                    <td>
+                        <select name="type">
+                            <option value="chicken">Куриные</option>
+                            <option value="quail">Перепелиные</option>
+                        </select>
+                        <select name="subtype">
+                            <option value="select">Отборные</option>
+                            <option value="regular">Обычные</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Доставка</td>
+                    <td>
+                        <input type="radio" name="delivery" value="post" id="post"><label for="post">Почтой</label>
+                        <input type="radio" name="delivery" value="email" id="email"><label for="email">Электронно</label>
+                        <input type="radio" name="delivery" value="courier" id="courier"><label for="courier">Курьером</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Требуется накладная</td>
+                    <td><input type="checkbox" name="invoice"></td>
+                </tr>
+                <tr>
+                    <td align="right" valign="top">Дополнительная информация</td>
+                    <td><textarea name="info" rows="3" cols="50"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Отправить"></td>
+                </tr>
+            </table>
+        </form>
+
+        <hr style="margin: 30px 0;">
+
+        <h3> Форма регистрации сайта</h3>
+        <div class="form-container">
+            <form action="#" method="post" class="reg-form">
+                <h2>Пример формы регистрации сайта</h2>
+                
+                <label>Логин:</label>
+                <input type="text" name="login" size="20">
+                
+                <label>Пароль:</label>
+                <input type="password" name="pass" size="20" value="123456">
+                
+                <label>URL-адрес сайта:</label>
+                <input type="text" name="url" size="20" value="http://">
+                
+                <label>Название сайта:</label>
+                <input type="text" name="sitename" size="20">
+                
+                <label>Описание сайта:</label>
+                <textarea name="description" rows="5" cols="40"></textarea>
+                
+                <label>Тема сайта:</label>
+                <select name="theme">
+                    <option value="none">Тема не выбрана</option>
+                    <option value="tech">Технологии</option>
+                    <option value="art">Искусство</option>
+                </select>
+                
+                <label>Баннер 88x31:</label>
+                <input type="file" name="banner">
+                
+                <div style="margin-top: 10px;">
+                    <input type="reset" value="Очистить" class="btn-reset">
+                    <input type="submit" value="Отправить" class="btn-submit">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="section narrow-section">
+        <h2 class="task3-title">Таблицы в HTML</h2>
+        
+        <div class="highlight-cyan">
+            Одним из наиболее мощных и широко применяемых в <strong>HTML</strong> средств являются <span class="big-nonbold">таблицы</span>.
+        </div>
+        
+        <div class="right-align">
+            <span class="yellow-bg"><span style="text-decoration: underline;">Понятие табличного представления данных не нуждается в дополнительном пояснении.</span></span>
+            <span class="gray-bg-inline">В HTML таблицы используются не только традиционно, как метод представления данных, но и как средство форматирования Web-страниц.</span>
+        </div>
+
+        <h3 class="purple-title">Создание простейших HTML-таблиц</h3>
+        
+        <p>
+            <span class="pink-bg">Описание</span> 
+            <span class="italic-underline">таблиц</span> <span class="underline-text">должно</span> располагаться внутри раздела документа &lt;BODY&gt;.
+        </p>
+        
+        <p>
+            Каждая <span class="blue-underline">таблица</span> должна <span class="big-font">начинаться</span> тэгом &lt;TABLE&gt; и завершаться тэгом &lt;/TABLE&gt;.
+        </p>
+        
+        <div class="gray-center-bg">
+            <span class="blue-italic">Каждая</span> <span class="normal-text">строка</span> начинается тэгом &lt;TR&gt; (Table Row) и завершается тэгом &lt;/TR&gt;. 
+            <span class="red-italic">Отдельная</span> ячейка в строке обрабатывается парой тегов &lt;TD&gt; и &lt;/TD&gt; (Table Data) или &lt;TH&gt; и &lt;/TH&gt; (Table Header).
+        </div>
+
+        <p class="right-align-table">Таблица 1</p>
+        
+        <h3 class="math-title">Математические выражения</h3>
+        
+        <table class="math-table">
+            <tr class="header-row">
+                <td class="header-left" width="20%"><b>Поле 1</b></td>
+                <td class="header-center" bgcolor="#000000" style="color: white;" width="20%"><b>Поле 2</b></td>
+                <td class="header-right-blue" bgcolor="#00FFFF" width="20%"><b>Поле 3</b></td>
+                <td class="header-left-underline" bgcolor="#FFC0CB" width="20%"><b>Поле 4</b></td>
+                <td bgcolor="#FFFF00" width="20%"><b>Поле 5</b></td>
+            </tr>
+            <tr>
+                <td class="empty-cell formula-blue">(a+b)<sup>2</sup></td>
+                <td class="formula-bold">a<sup>2</sup>-b<sup>2</sup></td>
+                <td class="formula-blue">(a-b)<sup>3</sup></td>
+                <td>A<sub>1</sub>+A<sub>2</sub>+...+A<sub>i</sub></td>
+                <td class="formula-blue">y=x<sup>2</sup></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
